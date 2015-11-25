@@ -1,0 +1,4 @@
+SELECT if(content like '1-%', substr(content,1,1), '') as country_code, if(content like '1-%', 
+substr(content,3,3), substr(content,1,5)) as area_code, if(content like '1-%', 
+substr(content,7,8), substr(content,6,11)) as line_number
+FROM Phone
