@@ -1,0 +1,5 @@
+SELECT ElectronicMail.content FROM ElectronicMail JOIN Entry ON ElectronicMail.entryId 
+= Entry.id JOIN AddressBook ON AddressBook.id = Entry.addressBookId JOIN Phone ON 
+Phone.entryId = Entry.id
+WHERE Phone.content like ('1-%');
+
