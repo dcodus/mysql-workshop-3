@@ -1,0 +1,4 @@
+SELECT COUNT(*), Phone.subtype FROM Phone JOIN Entry ON Phone.entryId = 
+Entry.id WHERE Entry.birthday >= '1950-10' AND Entry.birthday <= 
+'1960-10'
+GROUP BY Phone.subtype;
