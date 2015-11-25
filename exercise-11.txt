@@ -1,0 +1,1 @@
+select city from Address where country in ('Canada', 'Austria', 'Isle of Man', 'Ireland', 'Japan');
