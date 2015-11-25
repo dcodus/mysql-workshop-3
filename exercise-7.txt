@@ -1,0 +1,5 @@
+SELECT COUNT(*), substr(content, locate('@', content) + 1) AS Domain FROM ElectronicMail GROUP BY 
+Domain HAVING COUNT(*) > 1
+ORDER BY COUNT(*);
+
+
