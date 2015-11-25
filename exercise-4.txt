@@ -1,0 +1,18 @@
+SELECT CONCAT(
+    SUBSTR(firstName, 1, CHAR_LENGTH(firstName) - 2),
+    UPPER(SUBSTR(firstName, CHAR_LENGTH(firstName))) )AS weird_name FROM Entry JOIN 
+AddressBook ON Entry.addressBookId = AddressBook.id
+WHERE AddressBook.name = 'Pharetra Ut Limited';
+
++------------+
+| weird_name |
++------------+
+| ZelenA | AbdL | IdoA | IllaA | WinifrD | BuckminstR | HeiI | NeL | CiaA | SylvA | 
+| CarN | DietR | JamalA | HerrD | UniY | PascaE | ColtN | JamL | AbL | ZeA | PrescoT 
+| |
+| IdoA | PaloA | NeE | KyA | KimberlY | JilliN | AddisN | JacqueliE | SasA | LE | 
+| SalvadR | YoO | StaY | HalE | BlytE | TD | HalY | LaA | SummR | LatifH | FaiH | 
+| StacY | JennifR | FultN | ColN | ThaE | CarN | O | JamL | AmeA | MelanE | DriscoL | 
+| GareH | CoT | MartA | SierA | NiA | CelesE | KathleN | SamuL | AarN | CheyenE | 
+| BreT | RebekH |
++------------+
