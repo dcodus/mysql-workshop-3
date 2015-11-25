@@ -1,0 +1,9 @@
+SELECT Phone.content AS phone_numbers FROM Phone JOIN Entry ON Entry.id = Phone.entryId WHERE 
+Entry.firstName = 'Charlotte'
+AND Entry.lastName = 'Jenkins';
+
++----------------+
+| phone_numbers |
++----------------+
+| (110) 167-3420 | (605) 175-1334 |
++----------------+
