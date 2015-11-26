@@ -1,0 +1,3 @@
+SELECT date_format(createdOn, '%b %e %Y %l%:%i %p') as createdOn, date_format(modifiedOn, 
+'%D %y %a %k %i %b %j') as modifiedOn
+from Account;
