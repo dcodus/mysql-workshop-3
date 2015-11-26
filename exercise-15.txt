@@ -1,0 +1,3 @@
+update ElectronicMail set type= case when type='work' then 'home' when 
+type='home' then 'work' end
+where type in ('work','home');
