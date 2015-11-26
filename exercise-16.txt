@@ -1,0 +1,8 @@
+SELECT IF(substr(addressLine1,5,1)= ' ', floor(rand() * 
+substr(addressLine1,1,4)), IF(substr(addressLine1,4,1) = ' ', 
+floor(rand() * substr(addressLine1,1,3)), IF(substr(addressLine1,4,1) = 
+'-', floor(rand() * substr(addressLine1,1,3)), ' ' ) ) ) as 
+random_civic_numbers FROM Address WHERE type = 'other' and id >= 715 and 
+id <= 800 and concat('',substr(addressLine1,1,1) * 1) = 
+substr(addressLine1,1,1)
+limit 10;
