@@ -1,0 +1,4 @@
+SELECT subtype, IF(content like '1-%', concat_WS('-',substr(content, 1, 1), reverse(substr(content,3,3)), 
+reverse(substr(content, 7, 3)), reverse(substr(content, 11, 4))), concat('(', reverse(substr(content,2,3)), ')', ' ', 
+reverse(substr(content,7,3)), '-', reverse(substr(content, 11,4)))) as reversed_number FROM Phone
+WHERE subtype = 'fax';
