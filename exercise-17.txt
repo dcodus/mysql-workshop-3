@@ -1,0 +1,2 @@
+SELECT * from Address order by char_length(concat(addressLine1, city))
+;
